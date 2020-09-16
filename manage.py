@@ -1,6 +1,6 @@
 # ====================================================================================================================
 # Application Manager                                                                                   Flask Manager
-#
+# Personal Use
 #
 # Created by Nivaldo Georg Junior                                                                          15/09/2020
 # ====================================================================================================================
@@ -8,16 +8,6 @@
 # Python Native Libraries
 import datetime
 import os
-
-"""
-Application Creator, similar to FastFlask
-
-
-
-
-
-"""
-
 
 # ==================================================================================================================== #
 #                                                                                                  COMMON FUNCTIONS    #
@@ -40,15 +30,12 @@ def create_file(filename, content):
     f.write(content)
     f.close()
 
-
 def create_folder(folder_name):
     cmd(f'mkdir {folder_name}')
     print(f"\nFolder {folder_name} created.\n\n")
 
-
 def change_directory(dir_name):
     os.chdir(dir_name)
-
 
 username = input("My name is ")
 app_name = input("\nApplication name: ")
