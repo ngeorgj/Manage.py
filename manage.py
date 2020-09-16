@@ -10,8 +10,7 @@ import datetime
 import os
 
 """
-
-
+Application Creator, similar to FastFlask
 
 
 
@@ -26,7 +25,6 @@ import os
 
 def cmd(bash):
     os.system(f'{bash}')
-
 
 def create_empty_file(name, size):
     cmd(f'fsutil file createnew {name} {size}')
@@ -352,7 +350,6 @@ class Model(db.Model):
         db.session.delete(self)
         return commit and db.session.commit()"""
 
-
 a = Manager()
 a.create_app()
-a.menu()
+
